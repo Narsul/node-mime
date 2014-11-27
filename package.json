@@ -19,10 +19,22 @@
       "url": "https://raw.github.com/broofa/node-mime/master/LICENSE"
     }
   ],
-  "devDependencies": {},
-  "keywords": ["util", "mime"],
+  "scripts": {
+    "build": "node build/build.js > types.json",
+    "test": "node build/test.js"
+  },
+  "devDependencies": {
+    "request": "^2.48.0"
+  },
+  "keywords": [
+    "util",
+    "mime"
+  ],
   "main": "mime.js",
   "name": "mime",
-  "repository": {"url": "https://github.com/broofa/node-mime", "type": "git"},
+  "repository": {
+    "url": "https://github.com/broofa/node-mime",
+    "type": "git"
+  },
   "version": "1.2.11"
 }
