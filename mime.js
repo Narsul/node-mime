@@ -51,7 +51,7 @@ Mime.prototype.load = function(file) {
   this._loading = file;
   // Read file and split into lines
   var map = {},
-      content = fs.readFileSync(file, 'ascii'),
+      content = fs.readFileSync(file, 'utf8'),
       lines = content.split(/[\r\n]+/);
 
   lines.forEach(function(line) {
